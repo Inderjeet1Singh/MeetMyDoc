@@ -5,3 +5,10 @@
 ::-webkit-scrollbar {
   @apply hidden;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+#root {
+  background-color: black;
+}

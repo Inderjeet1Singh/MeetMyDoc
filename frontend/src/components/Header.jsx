@@ -3,7 +3,7 @@ import { assets } from "../assets/assets";
 
 const Header = () => {
   return (
-    <div className="my-3 flex flex-col md:flex-row bg-blue-500 rounded-lg px-6 md:px-10 overflow-hidden">
+    <div className="my-3 flex flex-col md:flex-row bg-black rounded-lg px-6 md:px-10 overflow-hidden">
       {/* Left side */}
       <div className="md:w-1/2 flex flex-col items-start justify-center gap-4 py-10">
         <p className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight">

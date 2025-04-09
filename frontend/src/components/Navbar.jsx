@@ -10,23 +10,31 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   return (
-    <nav className="w-full bg-white px-4 py-3 border-b border-gray-300">
+    <nav className="w-full  px-4 py-3 border-b border-gray-300 ">
       <div className="flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center space-x-3">
-          <img src={logo} alt="logo" className="h-10 w-auto" />
-          <span className="text-2xl font-bold text-red-600">MeetMyDoc</span>
+          <div
+            onClick={() => {
+              navigate("/");
+              scrollTo(0, 0);
+            }}
+            className="flex items-center space-x-3 cursor-pointer"
+          >
+            <img src={logo} alt="logo" className="h-10 w-auto " />
+            <span className="text-2xl font-bold text-red-600 ">MeetMyDoc</span>
+          </div>
         </div>
 
         {/* Hamburger Icon */}
-        <div className="md:hidden">
+        <div className="md:hidden text-white">
           <button onClick={toggleMenu}>
             {menuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
         </div>
 
         {/* Nav links on desktop */}
-        <ul className="hidden md:flex items-center space-x-6 font-medium text-gray-700">
+        <ul className="hidden md:flex items-center space-x-6 font-medium text-white">
           <li>
             <NavLink to="/" className="hover:text-blue-600 transition">
               Home
@@ -75,7 +83,7 @@ const Navbar = () => {
                   </p>
                   <p
                     onClick={() => setToken(false)}
-                    className="hover:text-black cursor-pointer"
+                    className="hover:text-white cursor-pointer"
                   >
                     Logout
                   </p>
@@ -95,7 +103,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden mt-4 flex flex-col space-y-3 font-medium text-gray-700">
+        <div className="md:hidden mt-4 flex flex-col space-y-3 font-medium text-white">
           <NavLink
             to="/"
             onClick={toggleMenu}
