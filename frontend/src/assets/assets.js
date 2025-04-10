@@ -27,6 +27,8 @@ import doc14 from "./Doctors/doc14.png";
 import doc15 from "./Doctors/doc15.png";
 import verified_icon from "./verified_icon.svg";
 import info_icon from "./info_icon.svg";
+import about_img from "./about_img.png";
+import contact_image from "./contact_image.png";
 export const assets = {
   profile_pic,
   dropdown_icon,
@@ -36,6 +38,8 @@ export const assets = {
   appointment_img,
   verified_icon,
   info_icon,
+  about_img,
+  contact_image,
 };
 export const doctors = [
   {
